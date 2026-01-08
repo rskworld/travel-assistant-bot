@@ -1,0 +1,26 @@
+/* RSK World - Free Programming Resources & Source Code */
+/* Founder: Molla Samser | Designer & Tester: Rima Khatun */
+/* Website: https://rskworld.in/contact.php | Year: 2026 */
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f6f8fb; color: #222; }
+header { background: #0d6efd; color: #fff; padding: 16px 24px; }
+h1 { margin: 0 0 8px 0; }
+main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px; }
+.chat { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+.messages { height: 300px; overflow-y: auto; border: 1px solid #eee; padding: 8px; margin-bottom: 12px; background: #fafafa; }
+#chat-form { display: flex; gap: 8px; }
+#chat-input { flex: 1; padding: 8px; }
+.tools { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+.tool { margin-bottom: 16px; }
+.tool input { margin-right: 8px; padding: 6px; }
+.tool button { padding: 6px 10px; }
+pre { background: #f2f2f2; padding: 8px; border-radius: 6px; }
+footer { text-align: center; padding: 16px; color: #555; }
+.header-grid { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.controls { display: flex; gap: 12px; align-items: center; }
+.auth input { padding: 6px; }
+.auth button { padding: 6px 10px; }
+.dark body, body.dark { background: #0b0e12; color: #e8edf5; }
+body.dark header { background: #0a58ca; }
+body.dark .chat, body.dark .tools { background: #12161c; border-color: #2a2f39; }
+body.dark .messages, body.dark pre { background: #0f1318; border-color: #1c2129; }

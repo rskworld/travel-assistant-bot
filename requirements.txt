@@ -1,0 +1,7 @@
+# RSK World - Free Programming Resources & Source Code
+# Founder: Molla Samser | Designer & Tester: Rima Khatun
+# Website: https://rskworld.in/contact.php | Year: 2026
+flask==3.0.0
+requests==2.32.3
+openai==1.57.0
+

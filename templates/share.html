@@ -1,0 +1,27 @@
+<!-- RSK World - Free Programming Resources & Source Code -->
+<!-- Founder: Molla Samser | Designer & Tester: Rima Khatun -->
+<!-- Website: https://rskworld.in/contact.php | Year: 2026 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shared Itinerary</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Shared Itinerary</h1>
+      <p>View-only itinerary link.</p>
+    </header>
+    <main>
+      <section class="tools">
+        <div class="tool">
+          <h3>Details</h3>
+          <pre id="share-json">{{ itinerary | tojson(indent=2) }}</pre>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>
+

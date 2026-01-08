@@ -1,0 +1,102 @@
+<!-- RSK World - Free Programming Resources & Source Code -->
+<!-- Founder: Molla Samser | Designer & Tester: Rima Khatun -->
+<!-- Website: https://rskworld.in/contact.php | Year: 2026 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Assistant Bot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-grid">
+        <div>
+          <h1 id="title-text">Travel Assistant Bot</h1>
+          <p id="subtitle-text">Book flights and hotels, get recommendations, plan itineraries, and check weather.</p>
+        </div>
+        <div class="controls">
+          <select id="lang-select">
+            <option value="en">English</option>
+            <option value="bn">বাংলা</option>
+          </select>
+          <div class="auth">
+            <input id="auth-email" type="email" placeholder="Email">
+            <input id="auth-pass" type="password" placeholder="Password">
+            <button id="auth-register">Register</button>
+            <button id="auth-login">Login</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="chat">
+        <div id="messages" class="messages"></div>
+        <form id="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask me anything about your trip..." required>
+          <button id="send-btn" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="tools">
+        <h2 id="tools-title">Quick Tools</h2>
+        <div class="tool">
+          <label><input type="checkbox" id="dark-toggle"> Dark Mode</label>
+        </div>
+        <div class="tool">
+          <h3 id="flights-title">Search Flights</h3>
+          <input id="flight-origin" placeholder="Origin (e.g., NYC)">
+          <input id="flight-destination" placeholder="Destination (e.g., SFO)">
+          <input id="flight-date" type="date">
+          <button id="flight-search">Search</button>
+          <pre id="flight-results"></pre>
+        </div>
+
+        <div class="tool">
+          <h3 id="hotels-title">Search Hotels</h3>
+          <input id="hotel-city" placeholder="City (e.g., Paris)">
+          <input id="hotel-checkin" type="date">
+          <input id="hotel-checkout" type="date">
+          <button id="hotel-search">Search</button>
+          <pre id="hotel-results"></pre>
+        </div>
+
+        <div class="tool">
+          <h3 id="weather-title">Weather</h3>
+          <input id="weather-location" placeholder="Location (e.g., Tokyo)">
+          <button id="weather-check">Check</button>
+          <pre id="weather-results"></pre>
+        </div>
+
+        <div class="tool">
+          <h3 id="itinerary-title">Itinerary</h3>
+          <button id="itinerary-list">List Itineraries</button>
+          <button id="itinerary-add">Add Sample Itinerary</button>
+          <pre id="itinerary-results"></pre>
+        </div>
+
+        <div class="tool">
+          <h3>Budget Calculator</h3>
+          <input id="budget-nights" type="number" placeholder="Nights">
+          <input id="budget-hotel" type="number" placeholder="Hotel/night USD">
+          <input id="budget-flight" type="number" placeholder="Flight USD">
+          <input id="budget-extras" type="number" placeholder="Extras USD">
+          <button id="budget-calc">Calculate</button>
+          <pre id="budget-results"></pre>
+        </div>
+
+        <div class="tool">
+          <h3>Share Itinerary</h3>
+          <input id="share-id" type="number" placeholder="Itinerary ID">
+          <button id="share-make">Create Share Link</button>
+          <pre id="share-results"></pre>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 RSK World</p>
+    </footer>
+    <script src="/static/js/app.js"></script>
+  </body>
+  </html>
